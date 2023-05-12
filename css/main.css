@@ -241,9 +241,7 @@ img {
 }
 
 .header_contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header_contacts {
@@ -255,6 +253,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -267,6 +268,9 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -275,6 +279,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1147,7 +1154,7 @@ img {
 }
 
 .input-field:focus,
-.input-field :hover {
+.input-field:hover {
   outline: 0;
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
@@ -1166,7 +1173,7 @@ img {
   transition: var(--anim-type);
   cursor: pointer;
 }
-.input-field:focus + .input-icon {
+.input-field:hover + .input-icon {
   color: var(--accent-color);
 }
 .input-icon:hover {
@@ -1473,7 +1480,7 @@ img {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 0px;
+  top: 15px;
   right: 15px;
   fill: currentColor;
 }
