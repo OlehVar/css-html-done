@@ -98,7 +98,7 @@
   }
   
   .header_contacts {
-    display: flex;
+    display: none;
   
     @media screen and (min-width: 768px) {
       display: flex;
@@ -110,6 +110,7 @@
       display: flex;
       flex-direction: row;
       gap: 30px;
+      align-items: center;
     }
   }
   

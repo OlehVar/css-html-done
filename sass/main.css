@@ -229,7 +229,7 @@ img {
 }
 
 .header_contacts {
-  display: flex;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header_contacts {
@@ -243,6 +243,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    align-items: center;
   }
 }
 
@@ -993,7 +994,7 @@ img {
   transition: var(--anim-type);
   cursor: pointer;
 }
-.input-field:focus + .input-icon {
+.input-field:hover + .input-icon {
   color: var(--accent-color);
 }
 .input-icon:hover {
